@@ -1,3 +1,6 @@
+pip install seaborn
+pip install plotly.express
+
 # Importing necessary libraries
 import streamlit as st
 import pandas as pd
