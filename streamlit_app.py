@@ -46,6 +46,7 @@ The resulting transformed dataset, with its augmented temporal and categorical f
 It not only retains the core information on adult male presence and climatic conditions but also empowers researchers to delve into nuanced patterns and correlations that may have 
 otherwise been obscured in the original data.
     """) 
+
     # Load your data
     # data = pd.read_csv('HighIncomeGroup.csv')
 
