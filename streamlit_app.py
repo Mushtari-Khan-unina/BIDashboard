@@ -1,5 +1,9 @@
+# Importing necessary libraries
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
 
 def home_page():
     # Add the slide image at the top of the page
@@ -50,6 +54,7 @@ otherwise been obscured in the original data.
 
     # Load your data
     data = pd.read_csv('Final_BI_DS.csv')
+    df = pd.read_csv('Final_BI_DS.csv')
 
     # Display the data using a DataFrame widget
     # st.write(data)
@@ -66,7 +71,17 @@ def insights_page():
 def code_page():
    # st.image("Slide2.PNG", use_column_width=True)
     st.title("Code")
-    st.write("This is the code page of the app.")
+    st.write("This is the Visualizations page of the app.")
+    # Create an interactive histogram with increased space between bins
+    fig = px.histogram(df, x='temperature_mean', nbins=20, title='Distribution of Temperature',
+                   labels={'temperature_mean': 'Temperature Mean'}, marginal='box')
+
+    # Update the layout to set the gap between bins
+    fig.update_layout(bargap=0.1)
+
+    # Show the interactive chart
+    fig.show()
+    
     
 # Create a function to switch pages based on user input
 def main():
