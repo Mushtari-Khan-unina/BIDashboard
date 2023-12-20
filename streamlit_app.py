@@ -6,7 +6,7 @@ def home_page():
     # st.image("Slide1.PNG", use_column_width=True)
 
     # Add the title of the app
-    st.title("- Mushtari Khan")
+    st.title("- Mushtari Khan, Laila Arzuman Ara")
     st.write("This is the home page of the app.")
     st.markdown("""
 Welcome to our interactive dashboard, a dynamic exploration of insights derived from a comprehensive analysis of the original environmental dataset. 
