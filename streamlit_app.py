@@ -57,18 +57,12 @@ otherwise been obscured in the original data.
     # Add a slider to control the number of rows displayed
     # num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
     #st.write(data.head(num_rows))
-
-
     
 def insights_page():
     #st.image("Slide3.PNG", use_column_width=True)
     st.title("Insights")
     st.write("This is the insights page of the app.")
-    
-def documentation_page():
-    st.title("Documentation")
-    st.write("This is the documentation page of the app.")
-    
+      
 def code_page():
    # st.image("Slide2.PNG", use_column_width=True)
     st.title("Code")
@@ -86,9 +80,7 @@ def main():
         about_page()
     elif choice == "Insights":
         insights_page()
-    elif choice == "Documentation":
-        documentation_page()
-    elif choice == "Code":
+    elif choice == "Visualizations":
         code_page()
 
 if __name__ == "__main__":
