@@ -22,7 +22,8 @@ The initial dataset captures essential environmental parameters, providing a sna
 The dataset includes information on the number of adult males, mean temperature, and relative humidity for each recorded date.
 This raw data offers a foundation for exploring patterns and relationships between adult male presence and climatic factors such as temperature and humidity. 
 Each row represents a distinct day, making it a valuable resource for understanding daily fluctuations in environmental conditions.
-    """) 
+    """)
+    
     # Load your data
     # data = pd.read_csv('HighIncomeGroup.csv')
 
@@ -33,7 +34,7 @@ Each row represents a distinct day, making it a valuable resource for understand
     # num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
     #st.write(data.head(num_rows))
 
-st.header("Transformed Dataset")
+    st.header("Transformed Dataset")
     st.markdown("""
 Through a meticulous transformation process, the original dataset has been enriched with additional insights, making it more amenable for in-depth analysis. 
 The transformation involves the extraction of meaningful temporal features such as day, month, year, and day of the week from the original date format. 
