@@ -3,7 +3,7 @@ import pandas as pd
 
 def home_page():
     # Add the slide image at the top of the page
-    #st.image("Slide1.PNG", use_column_width=True)
+    # st.image("Slide1.PNG", use_column_width=True)
 
     # Add the title of the app
     st.title("- Mushtari Khan")
@@ -32,13 +32,13 @@ def about_page():
     st.markdown("[MetaData](https://microdata.worldbank.org/index.php/catalog/4607/data-dictionary)")
     
     # Load your data
-    #data = pd.read_csv('HighIncomeGroup.csv')
+    # data = pd.read_csv('HighIncomeGroup.csv')
 
     # Display the data using a DataFrame widget
     # st.write(data)
 
     # Add a slider to control the number of rows displayed
-   # num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
+    # num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
     #st.write(data.head(num_rows))
 
     
