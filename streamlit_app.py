@@ -80,7 +80,6 @@ def code_page():
     # Show the interactive chart
     fig.show()
     
-    
 # Create a function to switch pages based on user input
 def main():
     st.sidebar.title("Navigation")
