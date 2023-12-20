@@ -25,14 +25,14 @@ Each row represents a distinct day, making it a valuable resource for understand
     """)
     
     # Load your data
-    # data = pd.read_csv('HighIncomeGroup.csv')
+    data = pd.read_csv('Project 1.csv')
 
     # Display the data using a DataFrame widget
     # st.write(data)
 
     # Add a slider to control the number of rows displayed
-    # num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
-    #st.write(data.head(num_rows))
+    num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
+    st.write(data.head(num_rows))
 
     st.header("Transformed Dataset")
     st.markdown("""
@@ -49,14 +49,14 @@ otherwise been obscured in the original data.
     """) 
 
     # Load your data
-    # data = pd.read_csv('HighIncomeGroup.csv')
+    data = pd.read_csv('Final_BI_DS.csv')
 
     # Display the data using a DataFrame widget
     # st.write(data)
 
     # Add a slider to control the number of rows displayed
-    # num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
-    #st.write(data.head(num_rows))
+    num_rows = st.slider('Select the number of rows to display', min_value=1, max_value=len(data), value=50)
+    st.write(data.head(num_rows))
     
 def insights_page():
     #st.image("Slide3.PNG", use_column_width=True)
